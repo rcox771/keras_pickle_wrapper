@@ -5,7 +5,7 @@ try:
     with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'README.md'),
             'rt') as f:
         long_desc = f.read()
-except FileNotFoundError:
+except:
     # Doesn't need to be in PyPI package.
     long_desc = None
 
